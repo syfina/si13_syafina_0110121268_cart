@@ -1,0 +1,155 @@
+<!DOCTYPE>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Cart</title> 
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box; 
+               }
+                header{
+                padding: 20px;
+                display: flex;
+                width: 80%;
+                position: fixed;
+                justify-content: space-between;
+                align-items: center;
+                background: #d9d9d9;
+                border: solid 2px;
+                
+                }
+                header div ul{
+                list-style: none;
+                display: flex;
+                margin-left: 10px;
+                }
+                header nav il{
+                list-style: none;
+                display: flex;
+                }
+               .badge {
+                padding-left: 9px;
+                padding-right: 9px;
+                -webkit-border-radius: 9px;
+                -moz-border-radius: 9px;
+                border-radius: 9px;
+                #lblCartCount {
+                font-size: 12px;
+                background: #ff0000;
+                color: #fff;
+                padding: 0 5px;
+                vertical-align: top;
+                margin-left: -10px; 
+                }
+        </style> 
+    </head> 
+    <body style="border: solid 2px;">
+        <main style="width: 80%; margin: 40px auto; padding: 20px;">
+            <header>
+                <div>
+                    <ul>
+                          <li style="font-size: 20; margin-right: 10px;"><span><b>Syafina</b></span></li>
+                          <li><a href="category1.html">Category 1</a></li>
+                          <li>|</li>
+                          <li><a href="category2.html">Category 2</a></li>
+                          <li>|</li>
+                          <li><a href="category3.html">Category 3</a></li>
+                   </ul>
+                </div>
+                <nav>
+                     <il>
+                          <li><a href="search.html">&#128269;</a></li>
+                          <li><i class="fa" style="font-size:24px">&#xf07a;</i><span class='badge badge-warning' id='lblCartCount'> 1 </span></li>  
+                     </il>
+                </nav>
+            </header>
+            <form>
+            <table style="border-collapse: collapse; width: 70%; margin: 60px 0; float: left;">
+                <thead>
+                    <tr>
+                       <h4>Your Order</h4>
+                    </tr>
+                </thead>
+                <tbody style="width: 100%">
+                    <tr>
+                        <td align="center" style="font-size: 20">Your Order</td>
+                    </tr>
+                    <tr style="border-top: solid 2px; border-bottom: solid 2px;">
+                        <td align="center">Item</td> 
+                        <td>Price</td>
+                        <td>Quantity</td>
+                    </tr>
+                    <tr>
+                        <td style="margin: 20px 0;"><img src="https://lifestyle.kompas.com/image/2021/05/15/214850820/10-sepatu-air-jordan-1-retro-terbaik?page=10" alt="" width="100">Airjordan</td>
+                        <td><b>$185.00</b></td>
+                        <td><select name="" id="quantity"></select><option value="1">1</option></td>
+                    </tr>
+                    <tr style="border-top: solid 2px; border-bottom: solid 2px;">
+                        <td colspan="3" align="right">Subtotal: <b>$185.00</b></td> 
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table style="border-collapse: collapse; background-color: #b3b3b3; float: right; margin: 80px 0;">
+                <thead>
+                    <tr>
+                        <th>
+                            <h4 colspan="2">Summary (1 item)</h4>
+                        </th>  
+                    </tr>
+                 </thead>
+                 <tbody>
+                    <tr>
+                        <td align="left">Subtotal</td> 
+                        <td align="right">$185.00</td> 
+                     </tr>
+                     <tr>
+                         <td align="left">Shipping</td> 
+                          <td align="right">-</td> 
+                      </tr>
+                      <tr>
+                           <td align="left">Est.Taxes</td> 
+                           <td align="right">-</td> 
+                      </tr>
+                      <tr style="border-top: solid 2px; border-color: #e6e6e6;">
+                          <td><b>Total</b></td> 
+                            <td align="right"><b>$185.00</b></td>
+                       </tr>
+                       <tr>
+                           <td colspan="2" align="center"><a href="checkout.html" style="background-color: #3399ff; font-color: #000; text-decoration: none;">Checkout!</a></td>  
+                       </tr>
+                </tbody>
+            </table>
+           </form>
+          <table style="border-collapse: collapse; border: solid 2px;">
+            <thead>
+              <tr>
+                <th></th>  
+              </tr>
+            <tbody>
+              <tr>
+                <td><b>Syafina</b></td>
+                <td><a href="categoryx.html">Category X</a></td>
+                <td>|</td>
+                <td><a href="categoryy.html">Category Y</a></td>
+                <td>|</td>
+                <td><a href="categoryz.html">Category Z</a></td>
+                <td style="margin 0 10px 0 20px;">
+                    <form><label for="input-email">Stay In Touch! Join our Newsletter.</label>
+                    <input id="input-email" type="email" placeholder="Enter Email">
+                    <input type="submit" value="Subscribe!" style="margin 10px 15px;"></form>  
+                 </td>  
+              </tr>
+              <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="" width="20"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg" alt="" width="20"><img src="https://id.m.wikipedia.org/wiki/ATM_Bersama#/media/Berkas%3AATM_Bersama_2016.png" alt="" width="20"></td>  
+              </tr>
+              </tbody>
+          </table>
+        </main>
+    </body>
+</html>
